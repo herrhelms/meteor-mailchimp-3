@@ -14,7 +14,7 @@ Custom Sign-up form
 add to your project with
 `meteor add herrhelms:meteor-mailchimp-3`
 
-macke sure you have a settings.json object in your projects server directory/scope
+make sure you have a settings.json file in your projects server directory.
 
 ```json
 {
