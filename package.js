@@ -12,6 +12,7 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.1.0.2');
+    api.imply('iron:router@1.0.7');
     api.addFiles('meteor-mailchimp-3.js');
     api.addFiles(['client/mailchimp.js'], 'client');
     api.addFiles(['server/mailchimp.js'], 'server');
