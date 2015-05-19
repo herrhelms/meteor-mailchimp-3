@@ -3,14 +3,14 @@
 var filter = {except: 'front'};
 
 if (Meteor.isClient) {
-    UI.registerHelper('gridRow', function() {
-        _.defaults(this, {span: 1, classes: ''});
-        this.classlist = 'grid-form-row ' + this.classes;
-        return Template._gridRow;
+    UI.registerHelper('customSignUpForm', function() {
+        return Template.mailchimpsubscribeform;
     });
 }
 
 if (Meteor.isServer) {
+
+/*
     var serverRoute = function(req, res, next) {
 
         var query = this.params.query;
@@ -33,4 +33,5 @@ if (Meteor.isServer) {
     Meteor.startup(function() {
         Router.onRun(serverRoute, _.extend(filter, {where: 'server'}));
     });
+*/
 }
